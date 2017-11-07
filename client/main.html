@@ -1,0 +1,18 @@
+<head>
+  <title>数字中文读法</title>
+</head>
+
+<body>
+  <h1>数字中文读法</h1>
+
+  {{> translator}}
+</body>
+
+<template name="translator">
+  <form>
+    <input type="text" placeholder="请输入数字（最多24位）" pattern="\d{1,24}" title="不超过24位（千垓位）的数字" size="24" autofocus required>
+    <button type="submit">转换</button>
+  </form>
+
+  <p>{{result}}</p>
+</template>
