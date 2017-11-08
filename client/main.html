@@ -10,7 +10,7 @@
 
 <template name="translator">
   <form>
-    <input type="text" placeholder="请输入数字（最多24位）" pattern="\d{1,24}" title="不超过24位（千垓位）的数字" size="24" autofocus required>
+    <input type="text" placeholder="请输入数字" pattern="0|([1-9]\d{0,23})" title="不超过24位（千垓位）的正整数" size="24" autofocus required>
     <button type="submit">转换</button>
   </form>
 
